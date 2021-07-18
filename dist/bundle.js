@@ -5003,7 +5003,7 @@ var EmbedField = function EmbedField(_ref6) {
   }, parseEmbedTitle(name)) : null;
   var fieldValue = value ? /*#__PURE__*/React__default['default'].createElement("div", {
     className: "embed-field-value markup"
-  }, value) : null;
+  }, parseAllowLinks(value)) : null;
   return /*#__PURE__*/React__default['default'].createElement("div", {
     className: cls
   }, fieldName, fieldValue);
