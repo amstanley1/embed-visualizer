@@ -1,0 +1,48 @@
+{
+  "root": true,
+  "extends": [
+    "airbnb",
+    "prettier",
+    "prettier/react",
+    "prettier/babel",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "no-bitwise": ["off"],
+    "no-unused-vars": ["off"],
+    "spaced-comment": ["off"],
+    "jsx-a11y/no-static-element-interactions": ["off"],
+    "array-callback-return": ["off"],
+    "react/no-array-index-key": ["off"],
+    "jsx-a11y/click-events-have-key-events": ["off"],
+    "radix": ["off"],
+    "react/jsx-no-duplicate-props": ["off"],
+    "react/require-default-props": ["off"],
+    "no-nested-ternary": ["off"],
+    "no-shadow": ["off"],
+    "react/forbid-prop-types": ["off"],
+    "jsx-a11y/no-noninteractive-element-interactions": ["off"],
+    "react/jsx-props-no-spreading": ["off"],
+    "react/prop-types": ["off"],
+    "no-return-assign": ["off"],
+    "jsx-a11y/href-no-hash": ["off"],
+    "react/jsx-filename-extension": [
+      "warn",
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ]
+  }
+}
