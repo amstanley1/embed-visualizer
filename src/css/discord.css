@@ -546,7 +546,7 @@
 }
 
 .message-group .comment .markup {
-  color: #737f8d;
+  color: #dcddde;
   font-size: 15px;
   line-height: 1.1em;
   white-space: pre-wrap;
@@ -681,7 +681,7 @@
 }
 
 .theme-dark .message-group.compact .timestamp {
-  color: hsla(0, 0%, 100%, .2)
+  color: #dcddde;
 }
 
 .theme-dark .message-group .embed-wrapper .embed-color-pill {
