@@ -5003,7 +5003,7 @@ var EmbedField = function EmbedField(_ref6) {
   }, parseEmbedTitle(name)) : null;
   var fieldValue = value ? /*#__PURE__*/React__default['default'].createElement("div", {
     className: "embed-field-value markup"
-  }, parseAllowLinks(value)) : null;
+  }, value) : null;
   return /*#__PURE__*/React__default['default'].createElement("div", {
     className: cls
   }, fieldName, fieldValue);
@@ -5838,8 +5838,7 @@ var App = React__default['default'].createClass({
     var error = '';
 
     try {
-      console.log(input); //parsed = JSON.parse(input);
-
+      //parsed = JSON.parse(input);
       parsed = input;
       isValid = validator(input);
 
@@ -5850,8 +5849,6 @@ var App = React__default['default'].createClass({
       error = e.message;
     }
 
-    console.log(isValid);
-    console.log(this.state.data);
     var data = isValid ? parsed : this.state.data;
     var embedColor = {
       r: 0,
@@ -5878,8 +5875,7 @@ var App = React__default['default'].createClass({
     });
   },
   componentDidUpdate: function componentDidUpdate(prevProps) {
-    console.log("update"); // Typical usage (don't forget to compare props):
-
+    // Typical usage (don't forget to compare props):
     if (JSON.stringify(this.props.embed) !== JSON.stringify(prevProps.embed)) {
       var input = {
         embed: this.props.embed,
@@ -5889,7 +5885,6 @@ var App = React__default['default'].createClass({
     }
   },
   componentWillMount: function componentWillMount() {
-    console.log(this.props.embed);
     var input = {
       embed: this.props.embed,
       content: 'Test'
