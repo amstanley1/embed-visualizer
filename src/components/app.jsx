@@ -71,7 +71,7 @@ const App = React.createClass({
     return {
       webhookMode: false,
       compactMode: false,
-      darkTheme: true,
+      darkTheme: false,
       currentModal: null,
       input: initialCode,
       data: {},

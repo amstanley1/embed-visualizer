@@ -889,8 +889,6 @@
   margin-right: 10px;
   height: 18px;
   width: 18px;
-  -o-object-fit: contain;
-  object-fit: contain;
   float: left;
   border-radius: 50%
 }
