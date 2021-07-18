@@ -112,7 +112,7 @@ const EmbedFooter = ({ timestamp, text, icon_url }) => {
     <img src={icon_url} className='embed-footer-icon' role='presentation' width='20' height='20' />
   ) : null;
 
-  return <div>{footerIcon}<span className='embed-footer'>{footerText}</span></div>;
+  return <div className="embed-footer-wrapper">{footerIcon}<span className='embed-footer'>{footerText}</span></div>;
 };
 
 const EmbedFields = ({ fields }) => {

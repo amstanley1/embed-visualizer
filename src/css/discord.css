@@ -980,6 +980,11 @@
   margin: 0
 }
 
+.embed .embed-footer-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .comment>:last-child .embed {
   margin-bottom: auto
 }
