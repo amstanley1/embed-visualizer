@@ -92,7 +92,6 @@ const App = React.createClass({
     let error = '';
 
     try {
-      console.log(input)
       //parsed = JSON.parse(input);
       parsed = input;
       isValid = validator(input);
@@ -102,8 +101,7 @@ const App = React.createClass({
     } catch (e) {
       error = e.message;
     }
-    console.log(isValid)
-    console.log(this.state.data)
+
     let data = isValid ? parsed : this.state.data;
 
     let embedColor = { r: 0, g: 0, b: 0 };
@@ -121,7 +119,6 @@ const App = React.createClass({
   },
 
   componentDidUpdate(prevProps) {
-    console.log("update")
   // Typical usage (don't forget to compare props):
   if (JSON.stringify(this.props.embed) !== JSON.stringify(prevProps.embed)) {
     const input = {embed: this.props.embed, content: 'Test'};
@@ -130,7 +127,6 @@ const App = React.createClass({
   },
 
   componentWillMount() {
-    console.log(this.props.embed)
     const input = {embed: this.props.embed, content: 'Test'};
     this.validateInput(input, this.state.webhookMode);
   },
